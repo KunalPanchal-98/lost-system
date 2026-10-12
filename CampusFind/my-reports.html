@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Reports | CampusFind</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="my-reports">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">C</span>
+          <span>CampusFind</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="report-lost.html">Lost Item</a>
+          <a href="report-found.html">Found Item</a>
+          <a href="my-reports.html" class="active">My Reports</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">🌙</button>
+          <a href="report-lost.html" class="primary-btn">New Report</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-banner">
+          <div class="banner-shell">
+            <span class="eyebrow">My reports</span>
+            <h1>Your submitted listings</h1>
+            <p class="muted">Track the reports you created, review their status, and delete outdated entries.</p>
+          </div>
+        </section>
+
+        <div id="my-reports-list" class="report-grid"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 CampusFind</span>
+        <span>Built using PHP, MySQL, HTML, CSS, and JavaScript</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

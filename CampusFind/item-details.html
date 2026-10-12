@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Details | CampusFind</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="item-details">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">C</span>
+          <span>CampusFind</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="report-lost.html">Lost Item</a>
+          <a href="report-found.html">Found Item</a>
+          <a href="my-reports.html">My Reports</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">🌙</button>
+          <a href="browse.html" class="secondary-btn">Browse More</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <div id="item-details-container">
+          <div class="detail-layout">
+            <div class="item-hero">
+              <div class="hero-top">
+                <span id="detail-type" class="badge lost">LOST</span>
+                <span class="muted">Item ID: #campus</span>
+              </div>
+              <h2 id="detail-title">Loading item...</h2>
+              <p class="muted" id="detail-description">Please wait while the details are loaded.</p>
+
+              <div class="meta-stack">
+                <div class="meta-item">
+                  <span>Category</span>
+                  <strong id="detail-category">-</strong>
+                </div>
+                <div class="meta-item">
+                  <span>Location</span>
+                  <strong id="detail-location">-</strong>
+                </div>
+                <div class="meta-item">
+                  <span>Date</span>
+                  <strong id="detail-date">-</strong>
+                </div>
+              </div>
+            </div>
+
+            <aside>
+              <div class="summary-card">
+                <h3>Contact details</h3>
+                <ul class="summary-list">
+                  <li><span>Reporter</span><strong id="detail-reported-by">-</strong></li>
+                  <li><span>Phone</span><strong id="detail-contact-phone">-</strong></li>
+                  <li><span>Email</span><strong id="detail-contact-email">-</strong></li>
+                </ul>
+              </div>
+
+              <div class="info-card" style="margin-top: 18px;">
+                <h3>Claim request</h3>
+                <p class="muted">Submit a request to contact the reporter directly.</p>
+                <div class="claim-box">
+                  <strong id="claim-count">0 requests</strong>
+                </div>
+
+                <form id="claim-form" class="claim-form" style="margin-top: 16px;">
+                  <div class="field">
+                    <label for="claim-name">Your name</label>
+                    <input id="claim-name" type="text" placeholder="Your name" required />
+                  </div>
+                  <div class="field">
+                    <label for="claim-phone">Phone number</label>
+                    <input id="claim-phone" type="tel" placeholder="Contact number" required />
+                  </div>
+                  <div class="field">
+                    <label for="claim-message">Message</label>
+                    <textarea id="claim-message" placeholder="Tell them why this item belongs to you." required></textarea>
+                  </div>
+                  <button type="submit" class="primary-btn">Send Claim Request</button>
+                </form>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 CampusFind</span>
+        <span>Built using PHP, MySQL, HTML, CSS, and JavaScript</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

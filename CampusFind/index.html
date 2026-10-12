@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusFind | Lost & Found</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">C</span>
+          <span>CampusFind</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="report-lost.html">Lost Item</a>
+          <a href="report-found.html">Found Item</a>
+          <a href="my-reports.html">My Reports</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">🌙</button>
+          <a href="report-lost.html" class="primary-btn">Report Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Campus support hub</span>
+            <h1>Find what’s lost and help return what’s found.</h1>
+            <p>
+              CampusFind makes it easy for students to report missing items, track found belongings,
+              and reconnect with lost essentials across the campus.
+            </p>
+            <div class="action-row">
+              <a href="browse.html" class="primary-btn">Browse Items</a>
+              <a href="report-found.html" class="secondary-btn">Report Found Item</a>
+            </div>
+            <div class="kpis">
+              <div class="kpi">
+                <span class="value" id="total-items">0</span>
+                <span class="label">Active items</span>
+              </div>
+              <div class="kpi">
+                <span class="value" id="lost-items">0</span>
+                <span class="label">Lost</span>
+              </div>
+              <div class="kpi">
+                <span class="value" id="found-items">0</span>
+                <span class="label">Found</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h3>Quick campus overview</h3>
+            <div class="stats-panel">
+              <div class="stat-box">
+                <strong>24/7</strong>
+                <span class="muted">Campus watch</span>
+              </div>
+              <div class="stat-box">
+                <strong>5 min</strong>
+                <span class="muted">Avg. response</span>
+              </div>
+              <div class="stat-box">
+                <strong>12+</strong>
+                <span class="muted">Campus zones</span>
+              </div>
+              <div class="stat-box">
+                <strong>100%</strong>
+                <span class="muted">Student-friendly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Browse campus categories</h2>
+          </div>
+          <div class="category-grid">
+            <article class="category-card">
+              <div class="category-icon">🎒</div>
+              <h3>Accessories</h3>
+              <p class="muted">Bags, bottles, keychains</p>
+            </article>
+            <article class="category-card">
+              <div class="category-icon">📄</div>
+              <h3>Documents</h3>
+              <p class="muted">IDs, forms, notebooks</p>
+            </article>
+            <article class="category-card">
+              <div class="category-icon">💻</div>
+              <h3>Electronics</h3>
+              <p class="muted">Chargers, headphones, drives</p>
+            </article>
+            <article class="category-card">
+              <div class="category-icon">🧢</div>
+              <h3>Personal Items</h3>
+              <p class="muted">Caps, wallets, watches</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Recently reported</h2>
+            <a class="inline-action" href="browse.html">View all</a>
+          </div>
+          <div id="featured-items" class="featured-grid"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>How it works</h2>
+          </div>
+          <div class="report-grid">
+            <article class="report-card">
+              <div class="card-top">
+                <span class="badge lost">1</span>
+              </div>
+              <div class="card-body">
+                <h3>Report a loss</h3>
+                <p>Share the item details, approximate location, and contact information in under a minute.</p>
+              </div>
+            </article>
+            <article class="report-card">
+              <div class="card-top">
+                <span class="badge found">2</span>
+              </div>
+              <div class="card-body">
+                <h3>Browse the list</h3>
+                <p>Search by keyword, category, and campus zone to find a matching report quickly.</p>
+              </div>
+            </article>
+            <article class="report-card">
+              <div class="card-top">
+                <span class="badge found">3</span>
+              </div>
+              <div class="card-body">
+                <h3>Claim & connect</h3>
+                <p>Send a claim request and get back in touch through the details shared by the reporter.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 CampusFind</span>
+        <span>Built using PHP, MySQL, HTML, CSS, and JavaScript</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

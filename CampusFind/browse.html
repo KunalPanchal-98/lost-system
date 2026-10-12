@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Items | CampusFind</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="browse">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">C</span>
+          <span>CampusFind</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="browse.html" class="active">Browse</a>
+          <a href="report-lost.html">Lost Item</a>
+          <a href="report-found.html">Found Item</a>
+          <a href="my-reports.html">My Reports</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">🌙</button>
+          <a href="report-lost.html" class="primary-btn">Report Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-banner">
+          <div class="banner-shell">
+            <span class="eyebrow">Browse listings</span>
+            <h1>Search lost and found items</h1>
+            <p class="muted">Use filters to find the exact item you’re looking for across the campus.</p>
+          </div>
+        </section>
+
+        <div class="controls-row">
+          <div class="field">
+            <label for="search-input">Search</label>
+            <input id="search-input" type="text" placeholder="Search by item, location, or keyword" />
+          </div>
+
+          <div class="field">
+            <label for="type-filter">Type</label>
+            <select id="type-filter">
+              <option value="all">All</option>
+              <option value="lost">Lost</option>
+              <option value="found">Found</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="category-filter">Category</label>
+            <select id="category-filter">
+              <option value="all">All categories</option>
+              <option value="Accessories">Accessories</option>
+              <option value="Documents">Documents</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Wallets">Wallets</option>
+              <option value="Personal Items">Personal Items</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="sort-filter">Sort</label>
+            <select id="sort-filter">
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="browse-grid" class="featured-grid"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 CampusFind</span>
+        <span>Built using PHP, MySQL, HTML, CSS, and JavaScript</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

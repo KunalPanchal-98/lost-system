@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Lost Item | CampusFind</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="lost-report">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">C</span>
+          <span>CampusFind</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="report-lost.html" class="active">Lost Item</a>
+          <a href="report-found.html">Found Item</a>
+          <a href="my-reports.html">My Reports</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">🌙</button>
+          <a href="report-found.html" class="secondary-btn">Report Found</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-banner">
+          <div class="banner-shell">
+            <span class="eyebrow">Report lost item</span>
+            <h1>Tell us what you misplaced</h1>
+            <p class="muted">Add clear details so the campus community can identify and return your item faster.</p>
+          </div>
+        </section>
+
+        <div class="form-card">
+          <form id="report-form">
+            <div class="form-grid">
+              <div class="field">
+                <label for="item-name">Item name</label>
+                <input id="item-name" name="item-name" type="text" placeholder="e.g. Blue water bottle" required />
+              </div>
+
+              <div class="field">
+                <label for="item-category">Category</label>
+                <select id="item-category" name="item-category" required>
+                  <option value="">Choose category</option>
+                  <option value="Accessories">Accessories</option>
+                  <option value="Documents">Documents</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Wallets">Wallets</option>
+                  <option value="Personal Items">Personal Items</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="item-location">Last seen location</label>
+                <input id="item-location" name="item-location" type="text" placeholder="Library, Lab, Cafeteria" required />
+              </div>
+
+              <div class="field">
+                <label for="item-date">Date lost</label>
+                <input id="item-date" name="item-date" type="date" required />
+              </div>
+
+              <div class="field full">
+                <label for="item-description">Description</label>
+                <textarea id="item-description" name="item-description" placeholder="Describe the item color, brand, unique features, and where you last saw it." required></textarea>
+              </div>
+
+              <div class="field">
+                <label for="contact-name">Your name</label>
+                <input id="contact-name" name="contact-name" type="text" placeholder="Your full name" required />
+              </div>
+
+              <div class="field">
+                <label for="contact-phone">Phone number</label>
+                <input id="contact-phone" name="contact-phone" type="tel" placeholder="10-digit number" required />
+              </div>
+
+              <div class="field full">
+                <label for="contact-email">Email address (optional)</label>
+                <input id="contact-email" name="contact-email" type="email" placeholder="name@college.edu" />
+              </div>
+            </div>
+
+            <div class="form-footer">
+              <span class="subtle-text">Your report is saved securely for this browsing session.</span>
+              <button type="submit" class="primary-btn">Submit Report</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 CampusFind</span>
+        <span>Built using PHP, MySQL, HTML, CSS, and JavaScript</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
